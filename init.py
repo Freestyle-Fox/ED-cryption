@@ -5,16 +5,8 @@ import os
 from EncrypterFunctions import *
 from otherFunc import *
 import random
-
-def openDycripter():
-    file_location = os.path.abspath(__file__)
-    file_location = os.path.dirname(file_location)
-    pyautogui.hotkey('ctrl', 'shift', 'n')
-    time.sleep(1.5)
-    pyautogui.typewrite('python '+'"'+file_location +'\DecrypterFunctions.py"')
-    pyautogui.press('enter')
-
-openDycripter()
+  
+initialise()
 
 while True:
     user_input = input(">> ")
