@@ -1,17 +1,27 @@
 import pygetwindow as gw
 import pyautogui
 import time
+import os
 from EncrypterFunctions import *
+from otherFunc import *
 import random
+
+def openDycripter():
+    file_location = os.path.abspath(__file__)
+    file_location = os.path.dirname(file_location)
+    pyautogui.hotkey('ctrl', 'shift', 'n')
+    time.sleep(1.5)
+    pyautogui.typewrite('python '+'"'+file_location +'\DecrypterFunctions.py"')
+    pyautogui.press('enter')
+
+openDycripter()
 
 while True:
     user_input = input(">> ")
     if user_input == "exit":
         # exit()
         break
-    
-    # make list of all encryption fuction and choose one at random
-    # func = 'encrypter00'+str(random.randrange(1,3))
+
     func = [encrypter001, encrypter002, encrypter003, encrypter004]
     user_input = func[random.randrange(0,len(func))](user_input)
     pyautogui.hotkey('alt', 'tab')
@@ -23,7 +33,3 @@ while True:
     pyautogui.press('enter')
     pyautogui.hotkey('alt', 'tab')
     
-    
-# l = 'luckry'
-# m = l[0:len(l)//2]+'x'+l[len(l)//2:]
-# print(m)

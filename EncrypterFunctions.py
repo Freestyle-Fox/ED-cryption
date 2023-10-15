@@ -1,6 +1,5 @@
 def encrypter(string, special_chars_dict,x):
     encripted_msg = ''
-    print(encripted_msg)
     for i in string:
         encripted_msg += special_chars_dict[i]
     return add_Ecode(encripted_msg,x)
