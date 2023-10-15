@@ -22,3 +22,8 @@ while True:
         time.sleep(0.3)
     pyautogui.press('enter')
     pyautogui.hotkey('alt', 'tab')
+    
+    
+# l = 'luckry'
+# m = l[0:len(l)//2]+'x'+l[len(l)//2:]
+# print(m)
