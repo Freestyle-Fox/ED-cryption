@@ -22,4 +22,3 @@ while True:
         time.sleep(0.3)
     pyautogui.press('enter')
     pyautogui.hotkey('alt', 'tab')
-    
