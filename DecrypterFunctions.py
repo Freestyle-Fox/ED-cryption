@@ -7,7 +7,7 @@ def extract_encrypter_code(string):
         string = string[0:len(string)//2-1] + string[len(string)//2:]
     else:
         code = int(string[len(string)//2])
-        string = string[0:len(string)//2] + string[len(string)//2:]
+        string = string[0:len(string)//2] + string[len(string)//2+1:]
     return code, string
     
     
