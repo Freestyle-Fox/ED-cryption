@@ -1,7 +1,7 @@
-
 import time
 import os
 import pyautogui
+from EncrypterFunctions import *
 def initialise():
     print("*************Welcome to the ED Crypter!*************\n")
     print("       ***********************************")
