@@ -14,7 +14,7 @@ while True:
         exit()
         break
 
-    func = [ encrypter005]
+    func = [encrypter001, encrypter002, encrypter003, encrypter004, encrypter005]
     user_input = func[random.randrange(0,len(func))](user_input)
     pyautogui.hotkey('alt', 'tab')
     pyautogui.typewrite(user_input)
