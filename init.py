@@ -11,10 +11,10 @@ initialise()
 while True:
     user_input = input(">> ")
     if user_input == "exit":
-        # exit()
+        exit()
         break
 
-    func = [encrypter001, encrypter002, encrypter003, encrypter004]
+    func = [ encrypter005]
     user_input = func[random.randrange(0,len(func))](user_input)
     pyautogui.hotkey('alt', 'tab')
     pyautogui.typewrite(user_input)

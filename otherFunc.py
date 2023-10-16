@@ -23,3 +23,9 @@ def openDycripter():
     pyautogui.press("enter")
     pyautogui.typewrite('python '+'"'+file_location +'\DecrypterFunctions.py"')
     pyautogui.press('enter')
+
+def exit():
+    print("Thanks for using the program")
+    print("closing the program...")
+    time.sleep(1)
+    
