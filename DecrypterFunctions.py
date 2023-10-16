@@ -25,7 +25,7 @@ def decryption(string, encryptercode):
     for i in split_list:
         position = val_list.index(i)
         dicrypted_text += key_list[position]
-    print(dicrypted_text)
+    print(">> ",dicrypted_text)
         
 while True:
     user_input = input("<< ")
