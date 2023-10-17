@@ -14,6 +14,9 @@ encryption004 = {
 encryption005 = {
     ' ': '1zZ', '!': 'Zz1', '"': '2yY', '#': 'yY2', '$': '3xX', '%': 'xX3', '&': '4wW', "'": 'wW4', '(': '5vV', ')': 'vV5', '*': '6uU', '+': 'uU6', ',': '7tT', '-': 'tT7', '.': '8sS', '/': 'sS8', '0': '9rR', '1': 'rR9', '2': '0qQ', '3': 'qQ0', '4': 'azA', '5': 'aAz', '6': 'bxB', '7': 'xBb', '8': 'cyC', '9': 'cCy', ':': 'dzD', ';': 'dDz', '<': 'exE', '=': 'xEz', '>': 'fyF', '?': 'yFf', '@': 'g!G', 'A': 'G!g', 'B': 'h@H', 'C': 'H@h', 'D': 'i#I', 'E': 'I#i', 'F': 'j$J', 'G': 'J$j', 'H': 'k%K', 'I': 'K%k', 'J': 'l^L', 'K': 'L^l', 'L': 'm&M', 'M': 'M&m', 'N': 'n*N', 'O': 'N*n', 'P': 'o(O', 'Q': 'O(o', 'R': 'p)P', 'S': 'P)p', 'T': 'q[Q', 'U': 'Q[q', 'V': 'r\\R', 'W': 'R\\r', 'X': 's]S', 'Y': 'S]s', 'Z': 't{T', '[': 'T{t', '\\': 'u}U', ']': 'U}u', '^': 'v|V', '_': 'V|v', '`': 'w`W', 'a': 'W`w', 'b': 'x~X', 'c': 'X~x', 'd': 'y!Y', 'e': 'Y!y', 'f': 'z@Z', 'g': 'Z@z', 'h': '{[}', 'i': '[{}', 'j': '|\\|', 'k': '\\|}', 'l': '}|]', 'm': ']|)', 'n': '|])', 'o': '])|', 'p': ')|}', 'q': '|})', 'r': '})|', 's': ']|(', 't': ']|/', 'u': ']|u', 'v': '|_u', 'w': '|`u', 'x': '|`}', 'y': '|!}', 'z': '|!{', '{': '|a{', '|': '|b|', '}': '|c}', '~': '|d~'}
 
+encryption006 = {
+    ' ': 'kRp', '!': 'sQa', '"': 'zWf', '#': 'jIx', '$': 'pMh', '%': 'qYw', '&': 'oZb', "'": 'cFv', '(': 'lKg', ')': 'tJs', '*': 'uHn', '+': 'eLt', ',': 'mOd', '-': 'vXy', '.': 'iQz', '/': 'wUq', '0': 'bVr', '1': 'sJa', '2': 'rKm', '3': 'xTc', '4': 'oUd', '5': 'vXz', '6': 'pQb', '7': 'yWn', '8': 'qLu', '9': 'tIr', ':': 'uXy', ';': 'wQv', '<': 'lZp', '=': 'vNr', '>': 'eKt', '?': 'aRf', '@': 'hMs', 'A': 'bQt', 'B': 'rVw', 'C': 'jLo', 'D': 'kUe', 'E': 'oIz', 'F': 'zSb', 'G': 'tXy', 'H': 'aWd', 'I': 'yQn', 'J': 'hLc', 'K': 'qVx', 'L': 'eOs', 'M': 'cRz', 'N': 'sYp', 'O': 'mVf', 'P': 'rXa', 'Q': 'wBn', 'R': 'fUc', 'S': 'zTl', 'T': 'bGm', 'U': 'vYw', 'V': 'xXk', 'W': 'oLr', 'X': 'kSj', 'Y': 'aPq', 'Z': 'gHt', '[': 'nZb', '\\': 'cQx', ']': 'lUm', '^': 'rJf', '_': 'uWd', '`': 'wOr', 'a': 'lZb', 'b': 'kWo', 'c': 'jJz', 'd': 'pRn', 'e': 'aVl', 'f': 'oYc', 'g': 'xMt', 'h': 'mOs', 'i': 'bFw', 'j': 'qXz', 'k': 'yNr', 'l': 'zKx', 'm': 'sBq', 'n': 'vXp', 'o': 'jCr', 'p': 'rBl', 'q': 'wKt', 'r': 'fIa', 's': 'kGm', 't': 'yLc', 'u': 'tHn', 'v': 'aVr', 'w': 'cSq', 'x': 'lRz', 'y': 'mHo', 'z': 'pTj', '{': 'qFv', '|': 'iCs', '}': 'eXy', '~': 'wOr'}
+
 
 def encrypter(string, special_chars_dict,x):
     encripted_msg = ''
@@ -43,5 +46,9 @@ def encrypter004(string):
     return encrypter(string, encryption004,4)
 
 def encrypter005(string):
-    global encryption004
+    global encryption005
     return encrypter(string, encryption005,5)
+
+def encrypter006(string):
+    global encryption006
+    return encrypter(string, encryption006,6)

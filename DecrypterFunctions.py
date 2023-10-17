@@ -1,4 +1,5 @@
 from EncrypterFunctions import *
+from otherFunc import *
 print("Decrypter Open Sucsessfully")
 
 def extract_encrypter_code(string):
@@ -12,7 +13,7 @@ def extract_encrypter_code(string):
     
     
 def decryption(string, encryptercode):
-    encryption_list = [encryption001, encryption002, encryption003, encryption004, encryption005]
+    encryption_list = [encryption001, encryption002, encryption003, encryption004, encryption005, encryption006]
     dicrypted_text = ''
     split_list = []
     if encryptercode ==1:
@@ -30,7 +31,7 @@ def decryption(string, encryptercode):
 while True:
     user_input = input("<< ")
     if user_input == "exit":
-        # exit()
+        exit()
         break
     encryptercode, encrypted_text = extract_encrypter_code(user_input)
     decypted_text = decryption(encrypted_text, encryptercode)
